@@ -1,7 +1,10 @@
 require 'json'
 
 def lambda_handler(event:, context:)
-  body = "ｷﾀ━━━━(ﾟ∀ﾟ)━━━━!! #{RUBY_DESCRIPTION}"
+  body = <<~EOS
+    ｷﾀ━━━━(ﾟ∀ﾟ)━━━━!!
+    #{RUBY_DESCRIPTION}
+  EOS
 
   {
     statusCode: 200,
